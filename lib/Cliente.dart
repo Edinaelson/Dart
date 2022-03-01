@@ -1,6 +1,5 @@
-class Cliente{
-  String nome = " ";
-  String cpf = " ";
-  String profissao = " ";
-
+class Cliente {
+  late String nome;
+  late String cpf;
+  late String profissao;
 }

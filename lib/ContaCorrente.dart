@@ -1,7 +1,7 @@
 import 'Cliente.dart';
 
-class ContaCorrente{
-  late Cliente titular;
+class ContaCorrente {
+  Cliente titular = Cliente();
 
   int agencia = 145;
   int conta = 22;

@@ -2,7 +2,7 @@ import 'package:nordbank/Cliente.dart';
 import 'package:nordbank/ContaCorrente.dart';
 
 void main(List<String> arguments) {
-  ContaCorrente contapaulo = ContaCorrente();
+  ContaCorrente contapaulo = ContaCorrente(123, 5990);
 
   Cliente paulo = Cliente();
 
@@ -11,14 +11,15 @@ void main(List<String> arguments) {
   paulo.profissao = "Programador";
 
   contapaulo.titular = paulo;
-
+  print("--------------------------------------");
   print("Nome: ${paulo.nome}");
   print("cpf: ${paulo.cpf}");
   print("Profissão: ${paulo.profissao}");
-
   print("Titular: ${contapaulo.titular.nome}");
+  print("--------------------------------------");
 
-  ContaCorrente contatiago = ContaCorrente();
+  ContaCorrente contatiago = ContaCorrente(-123, 6432);
+
   Cliente tiago = Cliente()
     ..nome = "Tiago"
     ..cpf = "054.532.432-75"
@@ -27,4 +28,9 @@ void main(List<String> arguments) {
   contatiago.titular = tiago;
 
   print("Titular: ${contatiago.titular.nome}");
+  print("conta: ${contatiago.saldo}");
+  print("agencia: ${contatiago.agencia}");
+  print("--------------------------------------");
+  print("total de contas criadas: ${ContaCorrente.totaldecontas}");
+  print("--------------------------------------");
 }

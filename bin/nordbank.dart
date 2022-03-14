@@ -33,4 +33,19 @@ void main(List<String> arguments) {
   print("--------------------------------------");
   print("total de contas criadas: ${ContaCorrente.totaldecontas}");
   print("--------------------------------------");
+
+  ContaCorrente contaedinaelson = ContaCorrente(3333, 5444);
+
+  Cliente edinaelson = Cliente()
+    ..nome = "Edinaelson"
+    ..profissao = "Analista"
+    ..cpf = "085.433.777-58";
+
+  print("Titular: ${contaedinaelson.titular.nome}");
+  print("Conta: ${contaedinaelson.saldo}");
+  print("Profissão: ${contaedinaelson.titular.profissao}");
+  print("Total de contas: ${ContaCorrente.totaldecontas}");
+
+
+
 }

@@ -41,6 +41,8 @@ void main(List<String> arguments) {
     ..profissao = "Analista"
     ..cpf = "085.433.777-58";
 
+  contaedinaelson.titular = edinaelson;
+
   print("Titular: ${contaedinaelson.titular.nome}");
   print("Conta: ${contaedinaelson.saldo}");
   print("Profissão: ${contaedinaelson.titular.profissao}");

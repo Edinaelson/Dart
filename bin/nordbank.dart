@@ -46,6 +46,4 @@ void main(List<String> arguments) {
   print("Profissão: ${contaedinaelson.titular.profissao}");
   print("Total de contas: ${ContaCorrente.totaldecontas}");
 
-
-
 }

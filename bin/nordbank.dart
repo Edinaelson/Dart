@@ -41,12 +41,12 @@ void main(List<String> arguments) {
     ..profissao = "Analista"
     ..cpf = "085.433.777-58";
 
-<<<<<<< HEAD
-  print("Titular da conta é: ${contaedinaelson.titular.nome}");
-=======
+
+
+
   contaedinaelson.titular = edinaelson;
 
->>>>>>> 93898a312ffcbc81bde57433a99cc41512ec7b39
+  print("Titular da conta é: ${contaedinaelson.titular.nome}");
   print("Titular: ${contaedinaelson.titular.nome}");
   print("Conta: ${contaedinaelson.saldo}");
   print("Profissão: ${contaedinaelson.titular.profissao}");
